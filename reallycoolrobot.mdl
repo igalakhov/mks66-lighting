@@ -1,0 +1,72 @@
+push
+# BODY
+translate
+250 300 0
+rotate
+y -20
+box
+-75 75 -25 150 50 50
+box
+-50 25 -25 100 50 50
+box
+-35 -25 -25 70 50 50
+# RIGHT ARM SHOULDER
+push
+move
+112.5 50 -50
+sphere
+0 0 0 37.5
+box
+-15 -15 -15 30 100 -30
+# RIGHT ARM OTHER PART
+push
+move
+0 -100 0
+sphere
+0 0 0 25
+box
+-10 0 -10 20 75 -20
+# RIGHT ARM
+push
+move
+0 -75 0
+box
+-20 0 -10 40 45 -20
+pop
+pop
+pop
+# LEFT ARM SHOULDER
+push
+move
+-112.5 50 -50
+sphere
+0 0 0 37.5
+box
+-15 -15 -15 30 100 -30
+# LEFT ARM OTHER PART
+push
+move
+0 -100 0
+sphere
+0 0 0 25
+box
+-10 0 -10 20 75 -20
+# LEFT ARM
+push
+move
+0 -75 0
+box
+-20 0 -10 40 45 -20
+pop
+pop
+pop
+# HEAD
+push
+move
+0 225 0
+box
+-40 -40 -40 80 80 80
+
+pop
+
+display
