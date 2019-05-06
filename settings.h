@@ -18,19 +18,18 @@ extern float_mat SPECULAR_EXPONENT;
 #define ENABLE_BACKFACE_CULLING true
 #define Z_BUFFER_MIN -1000
 
-#define SPHERE_NUM_STEPS 150
-#define TORUS_NUM_STEPS 150
+#define SPHERE_NUM_STEPS 250
+#define TORUS_NUM_STEPS 250
 
 // image stuff
-
 #define IMAGE_HEIGHT 500
 #define IMAGE_WIDTH 500
 #define NUM_PIXELS (IMAGE_HEIGHT * IMAGE_WIDTH)
 
 #define MAX_COLOR 255
-#define DEFAULT_COLOR_R (char) 255
-#define DEFAULT_COLOR_G (char) 255
-#define DEFAULT_COLOR_B (char) 255
+#define DEFAULT_COLOR_R (char) 0
+#define DEFAULT_COLOR_G (char) 0
+#define DEFAULT_COLOR_B (char) 0
 
 // color structure
 struct color {

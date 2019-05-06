@@ -1,2 +1,2 @@
-# mks66-solids
+# mks66-lighting
 

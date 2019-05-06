@@ -14,12 +14,17 @@
 
 int main(){
 
-//    // set up relevant constants
-//    normalize_in_place(view);
-//    normalize_in_place(light[0]);
+    // set up relevant constants
+    normalize_in_place(view);
+    normalize_in_place(light[0][0]);
+    normalize_in_place(light[1][0]);
+    normalize_in_place(light[2][0]);
+
+    //printf("light 1: (%f, %f, %f)\n", light[0][0][0], light[0][0][1], light[0][0][2]);
+    //printf("light 2: (%f, %f, %f)\n", light[1][0][0], light[1][0][1], light[1][0][2]);
 //
-//
-    auto p = new MDLParser("../script.mdl");
+////
+    auto p = new MDLParser("submissionscript.mdl");
 //
     p->run_file();
 
@@ -29,13 +34,15 @@ int main(){
 //
 //    auto s = m->get_triangle_matrix();
 //
-//    s->apply_transformation(TransformationMatrix::dilation(50, 50, 50));
-//
-//    s->apply_transformation(TransformationMatrix::translation(250, 250, 0));
+//    s->apply_transformation(TransformationMatrix::dilation(100, 100, 100));
+//    s->apply_transformation(TransformationMatrix::rotationXYZ(30, -45, -43));
+//    s->apply_transformation(TransformationMatrix::translation(200, 150, 0));
 //
 //    d->draw_polygons(s);
 //
 //    d->display();
+//
+//    d->save("../teapot.ppm", ".png");
 
 //
 //    for(int i = 1; i <= 206; i++){

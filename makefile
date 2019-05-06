@@ -1,5 +1,5 @@
-all: main.o drawer.o display.o edge_matrix.o transformation_matrix.o mdl_parser.o obj_parser.o parametric.o 3d.o unit_matrix.o triangle_matrix.o point_matrix.o vector_utils.o coordinate_stack.o
-	g++ -std=c++11 -o main.out main.o drawer.o display.o edge_matrix.o transformation_matrix.o mdl_parser.o obj_parser.o parametric.o 3d.o unit_matrix.o triangle_matrix.o point_matrix.o vector_utils.o coordinate_stack.o
+all: main.o drawer.o display.o edge_matrix.o transformation_matrix.o mdl_parser.o obj_parser.o parametric.o 3d.o unit_matrix.o triangle_matrix.o point_matrix.o vector_utils.o coordinate_stack.o lighting.o settings.o
+	g++ -std=c++11 -o main.out main.o drawer.o display.o edge_matrix.o transformation_matrix.o mdl_parser.o obj_parser.o parametric.o 3d.o unit_matrix.o triangle_matrix.o point_matrix.o vector_utils.o coordinate_stack.o lighting.o settings.o
 	./main.out
 
 main.o: main.cpp settings.h
@@ -44,7 +44,11 @@ parametric.o: drawing/parametric/parametric.h settings.h
 vector_utils.o: matrix/utils/vector_utils.cpp matrix/utils/vector_utils.h
 	g++ -std=c++11 -c matrix/utils/vector_utils.cpp
 
+lighting.o: drawing/lighting/lighting.cpp drawing/lighting/lighting.h
+	g++ -std=c++11 -c drawing/lighting/lighting.cpp
 
+settings.o: settings.cpp settings.h
+	g++ -std=c++11 -c settings.cpp
 clean:
 	touch fakefile.o
 	touch fakefile.h.gch

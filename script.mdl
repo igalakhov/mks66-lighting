@@ -1,20 +1,25 @@
 push
-translate
+move
 250 250 0
-rotate
-x 25
-rotate
-y 25
-rotate
-z 25
 sphere
-0 0 0 50
+-100 150 0 80
 sphere
-0 -200 0 50
-sphere
-0 200 0 50
+100 150 0 80
+push
+rotate
+x 45
+rotate
+y 45
+box
+-40 40 40 80 80 80
+pop
+push
+move
+0 -150 0
+rotate
+x 30
+scale
+1 1 0.5
 torus
-0 100 0 50 100
-torus
-0 -100 0 50 100
+0 0 0 30 175
 display
